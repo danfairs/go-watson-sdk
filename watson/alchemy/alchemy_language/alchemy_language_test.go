@@ -18,7 +18,7 @@ package alchemy_language
 import (
 	"testing"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 var sampleText = `Today we are launching a campaign called for HeForShe. I am reaching out to you because we need your help. We want to end gender inequality, and to do this, we need everyone involved. This is the first campaign of its kind at the UN. We want to try to mobilize as many men and boys as possible to be advocates for change. And, we don’t just want to talk about it. We want to try and make sure that it’s tangible.  I was appointed as Goodwill Ambassador for UN Women six months ago. And, the more I spoke about feminism, the more I realized that fighting for women’s rights has too often become synonymous with man-hating. If there is one thing I know for certain, it is that this has to stop.  For the record, feminism by definition is the belief that men and women should have equal rights and opportunities. It is the theory of political, economic and social equality of the sexes.  I started questioning gender-based assumptions a long time ago. When I was 8, I was confused for being called bossy because I wanted to direct the plays that we would put on for our parents, but the boys were not. When at 14, I started to be sexualized by certain elements of the media. When at 15, my girlfriends started dropping out of sports teams because they didn’t want to appear muscly. When at 18, my male friends were unable to express their feelings.`
@@ -288,7 +288,7 @@ func TestGetFeedLinks(t *testing.T) {
 	if feeds.Status != "OK" {
 		t.Errorf("GetFeedLinks() bad status. Wanted \"%s\" got \"%s\"", "OK", feeds.Status)
 		return
-	}	
+	}
 	// t.Logf("%+v\n", feeds)
 }
 
@@ -306,7 +306,7 @@ func TestExtractDates(t *testing.T) {
 	if dates.Status != "OK" {
 		t.Errorf("ExtractDates() bad status. Wanted \"%s\" got \"%s\"", "OK", dates.Status)
 		return
-	}	
+	}
 	// t.Logf("%+v\n", dates)
 }
 
@@ -324,6 +324,6 @@ func TestGetPubDate(t *testing.T) {
 	if dates.Status != "OK" {
 		t.Errorf("GetPubDate() bad status. Wanted \"%s\" got \"%s\"", "OK", dates.Status)
 		return
-	}	
+	}
 	// t.Logf("%+v\n", dates)
 }

@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 func TestConvert(t *testing.T) {
@@ -212,7 +212,7 @@ const html_doc = `<!DOCTYPE html>
 		</div>
 
 		<div id="display-word" style="white-space: pre-line;">
-			
+
 		</div>
 
 		<span class="icon-hyperlink">

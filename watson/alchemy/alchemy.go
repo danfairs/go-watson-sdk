@@ -26,7 +26,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 const defaultUrl = "https://gateway-a.watsonplatform.net/calls"
@@ -127,7 +127,7 @@ func (c Client) Get(path string, query map[string]interface{}, out interface{}) 
 	q.Set("apikey", c.watsonClient.Creds.ApiKey)
 	q.Set("outputMode", "json")
 
-	body, err := c.watsonClient.MakeRequest("GET", path + "?" + q.Encode(), nil, nil)
+	body, err := c.watsonClient.MakeRequest("GET", path+"?"+q.Encode(), nil, nil)
 	// fmt.Println(string(body))
 	if err != nil {
 		return err

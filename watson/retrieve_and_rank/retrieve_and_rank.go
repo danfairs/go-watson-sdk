@@ -25,7 +25,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 type Client struct {
@@ -364,7 +364,7 @@ func (c Client) Rank(ranker_id string, answerData io.Reader) (RankerOutput, erro
 }
 
 // Calls 'GET /v1/solr_clusters/{solr_cluster_id}/solr/{collection_name}/fcselect' to execute Solr search query with reranking.
-// See documentation at: https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/retrieve-and-rank/api/v1/#query_ranker 
+// See documentation at: https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/retrieve-and-rank/api/v1/#query_ranker
 func (c Client) RankAndSearch(solr_id string, collection_name string, ranker_id string, query string, options map[string]interface{}) ([]byte, error) {
 	q := url.Values{}
 	for k, v := range options {

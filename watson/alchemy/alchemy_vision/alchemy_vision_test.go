@@ -18,7 +18,7 @@ package alchemy_vision
 import (
 	"testing"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 func TestGetImageKeywords(t *testing.T) {

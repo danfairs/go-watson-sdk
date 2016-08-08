@@ -25,7 +25,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 type Client struct {

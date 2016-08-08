@@ -18,7 +18,7 @@ package alchemy_data_news
 import (
 	"testing"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 func TestGetNews(t *testing.T) {
@@ -31,7 +31,7 @@ func TestGetNews(t *testing.T) {
 	if err != nil {
 		t.Errorf("GetNews() failed %#v %s\n", err, err.Error())
 		return
-	}	
+	}
 	// t.Logf("%+v\n", news)
 }
 

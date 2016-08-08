@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 func TestCreateCluster(t *testing.T) {

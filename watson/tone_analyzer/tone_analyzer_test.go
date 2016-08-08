@@ -18,7 +18,7 @@ package tone_analyzer
 import (
 	"testing"
 
-	"github.com/liviosoares/go-watson-sdk/watson"
+	"github.com/danfairs/go-watson-sdk/watson"
 )
 
 func TestTone(t *testing.T) {

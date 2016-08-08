@@ -38,8 +38,8 @@ The sub-packages are all service specific and provide access and functionality t
 
 Alchemy Language
 
-	import "github.com/liviosoares/go-watson-sdk/watson"
-	import "github.com/liviosoares/go-watson-sdk/watson/alchemy/alchemy_language"
+	import "github.com/danfairs/go-watson-sdk/watson"
+	import "github.com/danfairs/go-watson-sdk/watson/alchemy/alchemy_language"
 
 	client, err := alchemy_language.NewClient(watson.Config{})
 	if err != nil {
@@ -52,9 +52,9 @@ Alchemy Language
 	fmt.Println(sentiment)
 
 Concept Insights
-	
-	import "github.com/liviosoares/go-watson-sdk/watson"
-	import "github.com/liviosoares/go-watson-sdk/watson/concept_insights"
+
+	import "github.com/danfairs/go-watson-sdk/watson"
+	import "github.com/danfairs/go-watson-sdk/watson/concept_insights"
 
 	client, err := concept_insights.NewClient(watson.Config{})
 	if err != nil {
